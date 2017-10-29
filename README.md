@@ -29,6 +29,6 @@ A small AI application containing [Angular 5](https://angular.io), [Material](ht
 ## Contributing
 Want to file a bug, contribute some code, or improve documentation? Feel free to place an [issue](https://github.com/jeroenouw/AngularAI/issues).  
 
-### credits
+## Credits
 [Angular Firebase](https://angularfirebase.com/)  
 [Dialogflow](https://dialogflow.com/)
