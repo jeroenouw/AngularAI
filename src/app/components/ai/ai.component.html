@@ -1,3 +1,12 @@
-<h1>
-    {{title}}
-</h1>
+<h1>Angular 5 AI</h1>
+<ng-container *ngFor="let message of allMessages | async">
+    <div class="message" [ngClass]="{ 'from': message.sentBy === 'bot',
+    'to':   message.sentBy === 'user' }">
+    {{ message.content }}
+</div>
+</ng-container>
+
+<label for="nameField">Your Message...</label>
+<input [(ngModel)]="formInput" (keyup.enter)="sendMessageToBot()" type="text">
+
+<button (click)="sendMessageToBot()">Send</button>
