@@ -7,7 +7,7 @@
 # Angular 5 AI
 A small AI application containing [Angular 5](https://angular.io), [Material](https://material.io/) and [Dialogflow](https://dialogflow.com/).
 
-## [Live demo](http://angularai.jerouw.nl) 
+## [Live demo](http://ai.jerouw.nl) 
 ![demo](https://jerouw.nl/wp-content/uploads/2017/10/angular5ai.png "demo")
 
 ## Features
