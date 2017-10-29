@@ -5,16 +5,22 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { AiService } from '../service/ai.service';
+import { AiComponent } from './ai/ai.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AiComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+    AiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
