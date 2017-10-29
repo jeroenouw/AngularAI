@@ -5,8 +5,8 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
-import { AiService } from '../service/ai.service';
-import { AiComponent } from './ai/ai.component';
+import { AiService } from './service/ai.service';
+import { AiComponent } from './components/ai/ai.component';
 
 @NgModule({
   declarations: [
