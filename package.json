@@ -11,7 +11,9 @@
     "chatbot",
     "bot",
     "ai",
-    "ngx"
+    "ngx",
+    "rxjs",
+    "observables"
   ],
   "repository": "https://github.com/jeroenouw/AngularAI",
   "license": "MIT",

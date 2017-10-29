@@ -1,12 +1,20 @@
-<h1>Angular 5 AI</h1>
-<ng-container *ngFor="let message of allMessages | async">
-    <div class="message" [ngClass]="{ 'from': message.sentBy === 'bot',
-    'to':   message.sentBy === 'user' }">
-    {{ message.content }}
-</div>
-</ng-container>
+<mat-card>
+    <h1 class="mat-display-1">Angular 5 AI</h1>
+    <h4 >Please ask me something...</h4>
 
-<label for="nameField">Your Message...</label>
-<input [(ngModel)]="formInput" (keyup.enter)="sendMessageToBot()" type="text">
+    <mat-card-content *ngFor="let message of allMessages | async">
+        <div 
+        class="message" 
+        [ngClass]="{ 'from': message.sentBy === 'bot', 'to':   message.sentBy === 'user' }">
+        {{ message.content }}
+        </div>
+    </mat-card-content>
 
-<button (click)="sendMessageToBot()">Send</button>
+    <mat-input-container>
+        <input matInput [(ngModel)]="formInput" placeholder="Your Message..." (keyup.enter)="sendMessageToBot()" type="text">
+    </mat-input-container>
+
+    <mat-card-actions class="button center">
+        <button mat-raised-button (click)="sendMessageToBot()">Send</button>
+    </mat-card-actions>
+</mat-card>

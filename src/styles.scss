@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
-
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "./src/assets/scss/base/variables";
 
 body {
     margin: 0;
+    background-color: $blue;
 }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
