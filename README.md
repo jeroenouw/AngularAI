@@ -1,4 +1,4 @@
-[![demolive](https://img.shields.io/badge/demo-live-green.svg)](http://angularai.jerouw.nl/)
+[![demolive](https://img.shields.io/badge/demo-live-green.svg)](http://ai.jerouw.nl/)
 [![npmversion](https://img.shields.io/npm/v/ngx-ai.svg)]()
 [![npmlicense](https://img.shields.io/npm/l/ngx-ai.svg)](https://github.com/jeroenouw/AngularAI/blob/master/LICENSE/)
 [![stars](https://img.shields.io/github/stars/jeroenouw/AngularAI.svg)](https://github.com/jeroenouw/AngularAI/stargazers)
@@ -25,6 +25,11 @@ A small AI application containing [Angular 5](https://angular.io), [Material](ht
 * Are we friends?
 * I'll be back
 * You're wrong
+* Nice to see you!
+* What's up?
+* I don't want to talk
+* Today is my birthday
+* I need an advice
 
 ## Contributing
 Want to file a bug, contribute some code, or improve documentation? Feel free to place an [issue](https://github.com/jeroenouw/AngularAI/issues).  
