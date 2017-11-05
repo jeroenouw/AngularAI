@@ -42,7 +42,7 @@ export class AiComponent implements OnInit, OnDestroy {
       },
       (err) => {
         console.log(err);
-        if (err.error) {
+        if (err.error  == "no-speech") {
           // console.log("Talking error");
           this.startTalkingToBot();
         }
