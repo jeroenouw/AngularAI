@@ -9,12 +9,19 @@
         </div>
     </mat-card-content>
 
-    <mat-input-container>
-        <input matInput [(ngModel)]="formInput" min="2" placeholder="Your Message..." (keyup.enter)="sendMessageToBot()" type="text">
-    </mat-input-container>
+    <div class="message-container">
+        <mat-card-actions class="voice-button">
+            <button mat-icon-button (click)="startTalkingToBot()">
+                <mat-icon>keyboard_voice</mat-icon> 
+            </button>
+        </mat-card-actions>
+        <mat-input-container>
+            <input matInput [(ngModel)]="formInput" min="2" placeholder="Your Message..." (keyup.enter)="sendMessageToBot()" type="text">
+        </mat-input-container>
+    </div>
 
     <mat-card-actions class="button center">
         <button mat-raised-button (click)="sendMessageToBot()">Send</button>
     </mat-card-actions>
-    
+
 </mat-card>
