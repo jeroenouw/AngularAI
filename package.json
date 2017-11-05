@@ -1,11 +1,12 @@
 {
   "name": "ngx-ai",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Jeroen Ouwehand",
   "description": "Angular 5 AI",
   "keywords": [
     "angular",
     "dialogflow",
+    "web speech api",
     "google",
     "material",
     "chatbot",

@@ -17,19 +17,11 @@ A small AI application containing [Angular 5](https://angular.io), [Material](ht
 * Dialogflow AI
 * Chatbot
 
-## Example sentences
-* Can you get smarter?
-* You're boring
-* Who is your boss?
-* You are funny
-* Are we friends?
-* I'll be back
-* You're wrong
-* Nice to see you!
-* What's up?
-* I don't want to talk
-* Today is my birthday
-* I need an advice
+## Sentences
+[A couple of example sentences to get you start talking](https://github.com/jeroenouw/AngularAI/blob/master/docs/SENTENCES.md) 
+
+## Developing
+[Quick starting and development](https://github.com/jeroenouw/AngularAI/blob/master/docs/DEVELOPING.md) 
 
 ## Contributing
 Want to file a bug, contribute some code, or improve documentation? Feel free to place an [issue](https://github.com/jeroenouw/AngularAI/issues).  
