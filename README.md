@@ -13,7 +13,7 @@ A small AI application containing [Angular 5](https://angular.io), [Material](ht
 ## Features
 * Angular 5
 * Material Design
-* RXJS observables
+* RxJS observables
 * Dialogflow AI
 * Chatbot
 

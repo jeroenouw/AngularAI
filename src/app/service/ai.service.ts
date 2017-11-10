@@ -51,11 +51,11 @@ export class AiService {
                     var transcript = result[0].transcript;
                     if (result.isFinal) {
                         if (result[0].confidence < 0.1) {
-                            console.log("Unrecognized result - Please try again");
+                            // console.log("Unrecognized result - Please try again");
                         }
                         else {
                             sentence = lodash.trim(transcript);
-                            console.log("Did you said? -> " + sentence + " , If not then say something else...");
+                            // console.log("Did you said? -> " + sentence + " , If not then say something else...");
                         }
                     }
                 }
