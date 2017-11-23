@@ -16,6 +16,7 @@
     "rxjs",
     "observables"
   ],
+  "main": "app.js",
   "repository": "https://github.com/jeroenouw/AngularAI",
   "license": "MIT",
   "angular-cli": {},
@@ -29,13 +30,20 @@
     "dist:aot": "ng build --aot",
     "prod": "ng build --prod",
     "prod:aot": "ng build --prod --aot",
-    "prod:opt": "ng build --prod --build-optimizer"
+    "prod:opt": "ng build --prod --build-optimizer",
+    "postinstall": "ng build --aot -prod"
+  },
+  "engines": {
+    "node": "8.9.1",
+    "npm": "5.5.1"
   },
   "dependencies": {
     "@angular/animations": "^5.0.1",
     "@angular/cdk": "^2.0.0-beta.12",
     "@angular/common": "^5.0.1",
+    "@angular/cli": "^1.5.0",
     "@angular/compiler": "^5.0.1",
+    "@angular/compiler-cli": "^5.0.1",
     "@angular/core": "^5.0.1",
     "@angular/forms": "^5.0.1",
     "@angular/http": "^5.0.1",
@@ -51,8 +59,6 @@
     "zone.js": "^0.8.18"
   },
   "devDependencies": {
-    "@angular/cli": "^1.5.0",
-    "@angular/compiler-cli": "^5.0.1",
     "@angular/language-service": "^5.0.1",
     "@types/jasmine": "^2.6.3",
     "@types/node": "^8.0.50",
