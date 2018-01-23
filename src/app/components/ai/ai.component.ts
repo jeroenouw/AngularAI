@@ -14,27 +14,27 @@ import { Message } from '../../model/message';
 export class AiComponent implements OnInit, OnDestroy {
   allMessages: Observable<Message[]>;
   formInput: string;
-  
-  constructor(public ai: AiService) { 
+
+  constructor(public ai: AiService) {
     this.formInput = '';
   }
-  
+
   ngOnInit() {
     this.allMessages = this.ai.conversation.asObservable()
     .pipe(
       scan((acc, val) => acc.concat(val))
     )
   }
-  
+
   ngOnDestroy() {
     this.ai.destroyVoiceConversation();
   }
-  
+
   sendMessageToBot() {
     this.ai.textConversation(this.formInput);
     this.formInput = '';
   }
-  
+
   startTalkingToBot() {
     this.ai.voiceConversation()
     .subscribe(
@@ -44,7 +44,7 @@ export class AiComponent implements OnInit, OnDestroy {
       },
       (err) => {
         console.log(err);
-        if (err.error  == "no-speech") {
+        if (err.error  === 'no-speech') {
           // console.log("Talking error");
           this.startTalkingToBot();
         }
@@ -55,4 +55,3 @@ export class AiComponent implements OnInit, OnDestroy {
       });
     }
   }
-  

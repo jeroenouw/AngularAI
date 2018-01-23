@@ -1,56 +1,56 @@
 @import "./src/assets/scss/base/variables";
 
 .message {
-    border-radius: 2px;
-    line-height: 36px;
-    margin: 0 15px 10px;
-    padding: 15px 20px;
-    vertical-align: baseline;
-    position: relative;
-    font-weight: bold;
-    word-wrap: break-word;
+  border-radius: 2px;
+  line-height: 36px;
+  margin: 0 15px 10px;
+  padding: 15px 20px;
+  vertical-align: baseline;
+  position: relative;
+  font-weight: bold;
+  word-wrap: break-word;
 }
 
 .message-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .message.to {
-    background-color: $darkblue;
-    color: $white;
-    margin: -10px 0 -10px 100px;
+  background-color: $darkblue;
+  color: $white;
+  margin: -10px 0 -10px 100px;
 }
 
 .message.from {
-    background-color: $pink;
-    color: $white;
-    margin: -10px 100px -10px 0;
+  background-color: $pink;
+  color: $white;
+  margin: -10px 100px -10px 0;
 }
 
 .center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .mat-input-container {
-    display: inline;
+  display: inline;
 }
 
 .mat-form-field {
-    width: 100%;
+  width: 100%;
 }
 
 .mat-raised-button {
-    background-color: $darkblue;
-    color: $white;
+  background-color: $darkblue;
+  color: $white;
 }
 
 .voice-button {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    line-height: 24px;
-    padding: 8px 20px 8px 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 24px;
+  padding: 8px 20px 8px 8px;
 }

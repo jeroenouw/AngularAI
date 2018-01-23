@@ -1,27 +1,27 @@
 <mat-card>
-    <h1 class="mat-display-1">Angular 5 AI</h1>
+  <h1 class="mat-display-1">Angular 5 AI</h1>
 
-    <mat-card-content *ngFor="let message of allMessages | async">
-        <div 
-        class="message" 
-        [ngClass]="{ 'from': message.sentBy === 'bot', 'to':   message.sentBy === 'user' }">
-        {{ message.content }}
-        </div>
-    </mat-card-content>
-
-    <div class="message-container">
-        <mat-card-actions class="voice-button">
-            <button mat-icon-button (click)="startTalkingToBot()">
-                <mat-icon>keyboard_voice</mat-icon> 
-            </button>
-        </mat-card-actions>
-        <mat-input-container>
-            <input matInput [(ngModel)]="formInput" min="2" placeholder="Your Message..." (keyup.enter)="sendMessageToBot()" type="text">
-        </mat-input-container>
+  <mat-card-content *ngFor="let message of allMessages | async">
+    <div
+    class="message"
+    [ngClass]="{ 'from': message.sentBy === 'bot', 'to':   message.sentBy === 'user' }">
+    {{ message.content }}
     </div>
+  </mat-card-content>
 
-    <mat-card-actions class="button center">
-        <button mat-raised-button (click)="sendMessageToBot()">Send</button>
+  <div class="message-container">
+    <mat-card-actions class="voice-button">
+      <button mat-icon-button (click)="startTalkingToBot()">
+        <mat-icon>keyboard_voice</mat-icon>
+      </button>
     </mat-card-actions>
+    <mat-input-container>
+      <input matInput [(ngModel)]="formInput" min="2" placeholder="Your Message..." (keyup.enter)="sendMessageToBot()" type="text">
+    </mat-input-container>
+  </div>
+
+  <mat-card-actions class="button center">
+    <button mat-raised-button (click)="sendMessageToBot()">Send</button>
+  </mat-card-actions>
 
 </mat-card>
