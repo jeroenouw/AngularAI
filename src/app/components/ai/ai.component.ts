@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs/observable';
 import { scan } from 'rxjs/operators';
 
 import { AiService } from '../../service/ai.service';
@@ -21,9 +21,9 @@ export class AiComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.allMessages = this.ai.conversation.asObservable()
-    .pipe(
-      scan((acc, val) => acc.concat(val))
-    )
+      .pipe(
+        scan((acc, val) => acc.concat(val))
+      )
   }
 
   ngOnDestroy() {
@@ -37,21 +37,21 @@ export class AiComponent implements OnInit, OnDestroy {
 
   startTalkingToBot() {
     this.ai.voiceConversation()
-    .subscribe(
-      (value) => {
-        this.formInput = value;
-        // console.log(value);
-      },
-      (err) => {
-        console.log(err);
-        if (err.error  === 'no-speech') {
-          // console.log("Talking error");
+      .subscribe(
+        (value) => {
+          this.formInput = value;
+          // console.log(value);
+        },
+        (err) => {
+          console.log(err);
+          if (err.error === 'no-speech') {
+            // console.log("Talking error");
+            this.startTalkingToBot();
+          }
+        },
+        () => {
+          // console.log("Talking complete");
           this.startTalkingToBot();
-        }
-      },
-      () => {
-        // console.log("Talking complete");
-        this.startTalkingToBot();
-      });
-    }
+        });
   }
+}

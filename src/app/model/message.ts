@@ -1,6 +1,6 @@
 export class Message {
-    constructor(
-        public content: string, 
-        public sentBy: string
-    ) {}
+  constructor(
+    public content: string,
+    public sentBy: string
+  ) { }
 }

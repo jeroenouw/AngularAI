@@ -2,12 +2,12 @@ import { Injectable, NgZone } from '@angular/core';
 import { environment } from '../../environments/environment';
 import * as lodash from 'lodash';
 
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs/observable';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 import { ApiAiClient } from 'api-ai-javascript';
 import { Message } from '../model/message'
-import { IWindow } from '../interface/iwindow'
+import { IWindow } from '../interface/Iwindow'
 
 @Injectable()
 export class AiService {
@@ -28,11 +28,11 @@ export class AiService {
     const userMessage = new Message(msg, 'user');
     this.update(userMessage);
     return this.client.textRequest(msg)
-    .then(res => {
-      const speech = res.result.fulfillment.speech;
-      const botMessage = new Message(speech, 'bot');
-      this.update(botMessage);
-    });
+      .then(res => {
+        const speech = res.result.fulfillment.speech;
+        const botMessage = new Message(speech, 'bot');
+        this.update(botMessage);
+      });
   }
 
   voiceConversation(): Observable<string> {
@@ -67,7 +67,7 @@ export class AiService {
       };
 
       this.speechRecognition.start();
-        // console.log('Listening...');
+      // console.log('Listening...');
     });
   }
 
