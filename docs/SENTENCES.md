@@ -1,4 +1,7 @@
+# SENTENCES
+
 ## Example sentences
+
 * Can you get smarter?
 * You're boring
 * Who is your boss?
