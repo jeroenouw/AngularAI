@@ -3,7 +3,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Observable } from 'rxjs/observable';
 import { scan } from 'rxjs/operators';
 
-import { AiService } from '../../service/ai.service';
+import { AiService } from '../../services/ai.service';
 import { Message } from '../../model/message';
 
 @Component({
